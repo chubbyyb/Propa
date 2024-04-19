@@ -1,0 +1,201 @@
+@font-face {
+  font-family: myLexend;
+  src: url(fonts/Lexend-Bold.ttf);
+  font-display: swap;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+h1.lexend{
+  font-family: myLexend;
+  text-align: center;
+  color: #b06f47;
+  top:0px;
+  z-index:100;
+  width:100%;
+}
+ul
+{
+color: black;
+}
+
+i.fa-python
+{
+color: #253449;
+}
+i.fa-unity
+{
+color: black;
+}
+i.fa-robot
+{
+color: black;
+}
+i.fa-raspberry-pi
+{
+color: black;
+}
+
+body.brown{
+  background-color: #e6d9c7;
+}
+
+a,a:hover,a:click, a:visited{
+border:none;
+outline:none;
+text-decoration:none;
+color:inherit;
+}
+
+
+.goodFont
+{
+font-size: 15px; 
+color: white; 
+font-family: myLexend;
+}
+
+.colButton
+{
+font-size: 15px;
+color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+background-color: #bec8c5; 
+border-width: 0px;
+}
+
+.smallIcon
+{
+height: 24px; 
+width: 24px;
+}
+
+.panelObject
+{
+border: 5px solid #6e493a;
+box-shadow: 3px 5px 10px grey;
+margin-right: 5px; 
+cursor: pointer;
+}
+
+.panelShadow
+{
+border: 20px solid black;
+margin-right: 5px; 
+cursor: pointer;
+}
+
+.vDIV
+{
+  border-color: #6e493a; 
+  border-style: solid; 
+  width: 100%;
+}
+
+.w98Container
+{
+  background-color: #bec8c5; 
+  margin-top: 15px; 
+  margin-left: 15px; 
+  border-radius: 0px;
+
+}
+
+.W98Bar
+{
+  border-style: solid; 
+  padding: 1px; 
+  background-color: #0200a6;
+}
+
+#elementEl1::after {
+content: '|';
+margin-left: 5px;
+animation: blink 0.7s infinite;
+}
+
+.behindPic
+{
+  background-color: #e6d9c7; 
+  margin-top: 15px; 
+  border-radius: 7px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+dialog
+{
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.48);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border-style: none;
+}
+
+.glass
+{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border-style: none;
+}
+
+
+
+
+ /* The following CSS is from https://codepen.io/daya-s/pen/MOdzGY */ 
+.starter-template {
+  padding: 80px 15px;
+  text-align: center;
+}
+
+span.lower-text {
+  color: #ffc300;
+  font-size: 25px;
+  display: block;
+}
+
+.hover-div {
+  text-align: center;
+  min-height: 350px;
+}
+
+.hover-div {
+  background: #f8f8f8;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 10px 0px;
+}
+
+.hover-div:hover {
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+  box-shadow: 0 22px 43px rgba(0, 0, 0, 0.32);
+  cursor: pointer;
+  border-radius: 5px;
+}
+ /* END */ 
+
+
+ 
