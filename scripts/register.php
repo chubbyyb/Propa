@@ -35,9 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit; // Stop further execution
     }
 
+    // Hash the password
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
     try{
         $sql = "INSERT INTO `login` (`username`, `password`, `fName`, `sName`, `phoneNum`, `email`)
-                VALUES ('$username', '$password', '$first_name', '$last_name', '$phoneNum', '$email')";
+                VALUES ('$username', '$hashed_password', '$first_name', '$last_name', '$phoneNum', '$email')";
 
         if ($conn->query($sql) === TRUE) {
             echo 3;
@@ -47,7 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch (Exception $e) {
         echo 4;
     }
-    
 }
 
 // Close database connection
